@@ -1,0 +1,26 @@
+#include <iostream>
+//Rizky Putri Pratiwi
+//G1A021044
+//Informatika B
+using namespace std;
+
+int factorial(int);
+
+int main() {
+    int n, result;
+
+    cout << "Masukan sebuah nomor non-negative atau positif: ";
+    cin >> n;
+
+    result = factorial(n);
+    cout << "Faktorial dari " << n << " = " << result;
+    return 0;
+}
+
+int factorial(int n) {
+    if (n > 1) {
+        return n * factorial(n - 1);
+    } else {
+        return 1;
+    }
+}
